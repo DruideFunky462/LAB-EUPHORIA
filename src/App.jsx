@@ -1,10 +1,11 @@
 import "./App.css";
-//import Navbar from "./components/Navbar.jsx";
+import Navbar from "./components/Navbar.jsx";
 //import Footer from "./components/Footer.jsx";
 import Home from "./pages/home";
 import Medailles from "./pages/medailles";
 import Legendes from "./pages/legendes";
 import FrenchGlory from "./pages/frenchglory";
+import Videos from "./pages/videos";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 
@@ -12,12 +13,13 @@ function App() {
   return (
     <div className="App">
       <Router>
-  
+        <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/frenchglory" element={<FrenchGlory />} />
           <Route path="/medailles" element={<Medailles />} />
           <Route path="/legendes" element={<Legendes />} />
+          <Route path="/videos" element={<Videos />} />
         </Routes>
 
       </Router>
@@ -28,4 +30,4 @@ function App() {
 export default App;
 
 
-// placer        <Navbar /> entre  Router et Routes  et     <Footer /> en bas
+// placer         entre  Router et Routes  et     <Footer /> en bas

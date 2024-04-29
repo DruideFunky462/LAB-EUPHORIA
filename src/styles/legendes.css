@@ -1,0 +1,22 @@
+.l-container {
+    display: flex;
+    flex-direction: row; /* Align children horizontally */
+    justify-content: center; /* Center children horizontally */
+    flex-wrap: wrap; /* Allow items to wrap onto multiple lines if needed */
+  }
+  
+  .l-card {
+    margin: 10px; /* Adjust spacing around each card */
+  }
+  
+  .l-img {
+    display: block; /* Ensure images don't inline with text */
+    width: 400px; /* Adjust width as needed 200*/
+    height: 500px; /* Adjust height as needed 300*/
+    object-fit: cover; /* Adjust how images fit in the container */
+  }
+  
+  .l-name {
+    text-align: center;
+  }
+  
