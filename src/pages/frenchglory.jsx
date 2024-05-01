@@ -1,14 +1,9 @@
-import React from "react";
-//import "../styles/frenchglory.css";
-
+import React from 'react';
+import '../styles/frenchglory.css';
 
 const FrenchGlory = () => {
-return (
-  <div  >
-    <p>frenchglory</p>
-  </div>
-);
-
+    return <div>FrenchGlory</div>
 }
+
 
 export default FrenchGlory;

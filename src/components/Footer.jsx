@@ -1,9 +1,13 @@
 import React from "react";
-import InstagramIcon from "@mui/icons/Instagram";
-import TwitterIcon from "@mui/icons/Twitter";
-import FacebookIcon from "@mui/icons/Facebook";
-import LinkedInIcon from "@mui/icons/LinkedIn";
-//import "../styles/Footer.css";
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
+import InstagramIcon from '@material-ui/icons/Instagram';
+import TwitterIcon from '@material-ui/icons/TwitterIcon';
+import FacebookIcon from '@material-ui/icons/FacebookIcon';
+import LinkedInIcon from '@material-ui/icons/LinkedInIcon';
+import "../styles/footer.css";
 
 function Footer() {
   return (
