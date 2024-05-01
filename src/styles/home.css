@@ -1,0 +1,47 @@
+.hexagon-page {
+  position: relative; /* Conteneur parent pour positionnement absolu */
+  height: 100vh; /* Prendre toute la hauteur de la page */
+  
+}
+
+.hfrenchglory {
+  position: absolute; /* Positionnement absolu */
+  top: 10%; /* À 10% du haut */
+  left: 10%; /* À 10% de la gauche */
+  width: 200px; /* Ajuste la largeur */
+  height: 200px;
+}
+
+.hmedailles {
+  position: absolute; /* Positionnement absolu */
+  top: 10%; /* À 10% du haut */
+  right: 10%; /* À 10% de la droite */
+  width: 200px; /* Ajuste la largeur */
+  height: 200px;
+}
+
+.hlegendes {
+  position: absolute; /* Positionnement absolu */
+  bottom: 10%; /* À 10% du bas */
+  left: 50%; /* Au milieu horizontalement */
+  transform: translateX(-50%); /* Centre horizontalement */
+  width: 200px; /* Ajuste la largeur */
+  height: 200px;
+}
+
+
+.hfrenchglory:hover {
+  opacity: 0.8; /* Réduit l'opacité au survol */
+  transition: opacity 0.3s ease-in-out; /* Animation pour un effet doux */
+}
+
+.hlegendes:hover {
+  opacity: 0.8; /* Réduit l'opacité au survol */
+  transition: opacity 0.3s ease-in-out; /* Animation pour un effet doux */
+}
+
+.hmedailles:hover {
+  opacity: 0.8; /* Réduit l'opacité au survol */
+  transition: opacity 0.3s ease-in-out; /* Animation pour un effet doux */
+}
+

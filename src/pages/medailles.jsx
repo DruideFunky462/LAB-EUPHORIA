@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/medailles.css';
+import Navbarmedailles from "../components/Navbarmedailles";
 
 // Assuming you have URLs for your medal images
 const medalImages = {
@@ -24,19 +25,29 @@ const medalsData = {
 
 const Medailles = () => {
   return (
+    <div className='boss'>
+      <Navbarmedailles />
+
     <div className="medailles-container">
-      <h1>MÉDAILLES</h1>
+      
       <div className="team-section">
+
         <h2>Equipe Masculine</h2>
+
         <div className="medals-list">
+
           {medalsData.EquipeMasculine.map((medal, index) => (
             <div key={index} className={`medal ${medal.type}`}>
-              <img src={medalImages[medal.type]} alt={`${medal.type} medal`} />
-              <span>{medal.year}</span>
+              <img src={medalImages[medal.type]} alt={`${medal.type} medal`} className='medal-img'/>
+              <span className='year'>{medal.year}</span>
             </div>
           ))}
         </div>
+
       </div>
+    
+      <hr className="horizontal-separator" /> {/* Barre de séparation */}
+
       <div className="team-section">
         <h2>Equipe Féminine</h2>
         <div className="medals-list">
@@ -48,6 +59,7 @@ const Medailles = () => {
           ))}
         </div>
       </div>
+    </div>
     </div>
   );
 };

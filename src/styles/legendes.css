@@ -3,10 +3,14 @@
     flex-direction: row; /* Align children horizontally */
     justify-content: center; /* Center children horizontally */
     flex-wrap: wrap; /* Allow items to wrap onto multiple lines if needed */
+   /* gap: 20px;  Espace horizontal entre les éléments */
+    row-gap: 100px; /* Espace vertical entre les lignes */
+    background-image: linear-gradient(to bottom, #102838, #1A425B, #060E14); /* Dégradé du haut vers le bas */
   }
   
   .l-card {
     margin: 10px; /* Adjust spacing around each card */
+  
   }
   
   .l-img {
@@ -18,5 +22,7 @@
   
   .l-name {
     text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:white !important;
   }
   

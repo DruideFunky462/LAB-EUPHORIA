@@ -1,17 +1,19 @@
 import React from "react";
 import styled from "styled-components";
 
+
 const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  
 `;
 
 const Hexagon = styled.div`
   position: relative;
   width: 150px;
   height: 150px;
-  background-color: #3498db;
+  background-color: #004792;
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   margin: 29px 0;
   opacity: 0.7;
@@ -41,6 +43,7 @@ const OverlappingHexagon = styled(Hexagon)`
 const Category = () => {
   return (
     <Container>
+
       <HexagonContainer>
         {/* Hexagone 1 */}
         <Hexagon>
@@ -51,6 +54,7 @@ const Category = () => {
           <HexagonText>VIDEOS</HexagonText>
         </OverlappingHexagon>
       </HexagonContainer>
+
       <HexagonContainer>
         {/* Hexagone 3 */}
         <Hexagon>
@@ -61,6 +65,7 @@ const Category = () => {
           <HexagonText>VIDEOS</HexagonText>
         </OverlappingHexagon>
       </HexagonContainer>
+
       <HexagonContainer>
         {/* Hexagone 5 */}
         <Hexagon>
@@ -71,6 +76,7 @@ const Category = () => {
           <HexagonText>VIDEOS</HexagonText>
         </OverlappingHexagon>
       </HexagonContainer>
+
     </Container>
   );
 };

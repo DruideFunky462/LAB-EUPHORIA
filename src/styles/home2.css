@@ -1,0 +1,63 @@
+.hexagon-grid {
+  display: grid; /* Enable CSS Grid */
+  grid-template-rows: 1fr 1fr 1fr; /* Three equally sized rows */
+  grid-template-columns: 1fr 1fr 1fr; /* Three equally sized columns */
+  grid-template-areas: /* Define the areas for the grid */
+    ". . ."
+    "hex1 . hex2"
+    ". . ."
+    "hex3 . .";
+  height: 100vh; /* Take the full height of the page */
+  background-color: #f0f0f0; /* Background color */
+}
+/*
+"hex1 . hex2"
+". . ."
+"hex3 . .";
+*/
+
+.hexagon {
+  position: relative; /* Position relative for absolute children */
+  width: 100px;
+  height: 57.74px;
+  background-color: #3498db;
+  margin: 10px;
+}
+
+.hexagon:before, .hexagon:after {
+  content: '';
+  position: absolute;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+}
+
+.hexagon:before {
+  bottom: 100%;
+  border-bottom: 28.87px solid #3498db;
+}
+
+.hexagon:after {
+  top: 100%;
+  border-top: 28.87px solid #3498db;
+}
+
+.hexagon-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the content */
+  color: white;
+  text-align: center;
+}
+
+.hexagon.top-left {
+  grid-area: hex1; /* Assign this hexagon to the defined grid area */
+}
+
+.hexagon.middle-right {
+  grid-area: hex2; /* Assign this hexagon to the defined grid area */
+}
+
+.hexagon.bottom-left {
+  grid-area: hex3; /* Assign this hexagon to the defined grid area */
+}

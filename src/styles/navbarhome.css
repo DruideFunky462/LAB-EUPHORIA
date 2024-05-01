@@ -1,0 +1,120 @@
+.active {
+    background-color: #1d4ed8;
+}
+
+nav.navhome {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #102838, #1A425B, #060E14);
+    /* position:sticky; */
+    top: 0;
+    padding: 3rem;
+    text-decoration-color: white !important;
+
+    background-repeat: no-repeat;
+    background-size:1000 px 500px; /* Ajuste la taille de l'image pour couvrir toute la zone */
+    height: 600px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+}
+.texto {
+    
+    text-align: justify;
+    text-align: center;
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 0;
+    opacity: 0.7; /* Réglez la valeur d'opacité selon vos préférences (de 0 à 1) */
+}
+
+
+nav.title {
+    margin: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+}
+
+
+nav h1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 1rem;
+    font-size: 2rem;
+    color: white !important;
+}
+
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color:white;
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+    border-radius:0.5rem;
+}
+
+nav ul li a:not(.active):hover {
+    /* Applique le style si l'élément ne possède pas la classe active */
+    background-color: #172554;
+}
+
+nav .menu {
+    display: none;
+    position: absolute;
+    top: 0.75rem;
+    right: 0.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2.25rem;
+    height: 2rem;
+    
+}
+
+nav .menu span {
+    height: 0.4rem;
+    width: 100%;
+    background-color: white;
+    border-radius: 0.2rem;
+}
+
+@media (max-width: 1375px) {          /*480*/
+    nav .menu {
+        display: flex;
+    }
+    nav {
+        flex-direction: column;
+        align-items: start;
+        padding: 1rem;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 0.25rem;
+    }
+
+    nav ul.open {
+        display: flex;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li a {
+        margin: 0.2rem 0.5rem;
+    }
+}

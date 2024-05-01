@@ -1,0 +1,62 @@
+.hexagon-page {
+  display: flex-column;
+  position: relative; /* Position relative pour positionner les enfants */
+  height: 100vh; /* Prendre toute la hauteur de la page */
+  background-image: linear-gradient(to bottom, #102838, #1A425B, #060E14); /* Dégradé du haut vers le bas */
+}
+
+.hexagon {
+  position: absolute; /* Position absolu pour un placement flexible */
+  width: 100px;    /*   100px     57.74   */
+  height: 57.74px;
+  background-color: #3498db;
+  margin: 10px;
+}
+
+.hexagon:before, .hexagon:after {
+  content: '';
+  position: absolute; /* Position absolue pour les parties supérieure et inférieure */
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+}
+
+.hexagon:before {
+  bottom: 100%;
+  border-bottom: 28.87px solid #3498db;
+}
+
+.hexagon:after {
+  top: 100%;
+  border-top: 28.87px solid #3498db;
+}
+
+.hexagon-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centre le contenu */
+  color: white;
+  text-align: center;
+}
+
+.hexagon.frenchglory {
+  top: 20%; /* Positionne en haut de la page */
+  left: 30%; /* Positionne à gauche de la page */
+  
+}
+
+.hexagon.medailles {
+  
+  top: 50%; /* Milieu vertical */
+  right: 10%; /* À droite de la page */
+  transform: translateY(-50%); /* Centre verticalement */
+ 
+}
+
+.hexagon.legendes {
+  
+  bottom: 30%; /* En bas de la page */
+  left: 10%; /* À gauche de la page */
+  
+  
+}

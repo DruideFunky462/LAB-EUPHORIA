@@ -6,9 +6,11 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #0f172a;
-    position:sticky;
+    background-color: #004792;
+   /* position:sticky; */
     top:0;
+    padding: 3rem;
+    text-decoration-color: white !important;
 }
 
 nav.title {

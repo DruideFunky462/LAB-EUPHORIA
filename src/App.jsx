@@ -1,7 +1,7 @@
 import "./App.css";
 import Navbar from "./components/Navbar.jsx";
 //import Footer from "./components/Footer.jsx";
-import Home from "./pages/home";
+import Home from "./pages/home.jsx";
 import Medailles from "./pages/medailles";
 import Legendes from "./pages/legendes";
 import FrenchGlory from "./pages/frenchglory";
@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Navbar />
+                
         <Routes>
           <Route path="/home" element={<Home />} />
           <Route path="/frenchglory" element={<FrenchGlory />} />
